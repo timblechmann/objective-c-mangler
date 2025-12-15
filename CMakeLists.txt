@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(objective-c-mangler LANGUAGES OBJC CXX)
+project(objective-c-mangler LANGUAGES C OBJC CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
