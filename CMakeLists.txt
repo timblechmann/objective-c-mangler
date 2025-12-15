@@ -21,15 +21,15 @@ add_custom_target(BuildTools
 
 file(
   DOWNLOAD
-  https://github.com/cpm-cmake/CPM.cmake/releases/download/v0.40.8/CPM.cmake
+  https://github.com/cpm-cmake/CPM.cmake/releases/download/v0.42.0/CPM.cmake
   ${CMAKE_CURRENT_BINARY_DIR}/cmake/CPM.cmake
-  EXPECTED_HASH SHA256=78ba32abdf798bc616bab7c73aac32a17bbd7b06ad9e26a6add69de8f3ae4791
+  EXPECTED_HASH SHA256=2020b4fc42dba44817983e06342e682ecfc3d2f484a581f11cc5731fbe4dce8a
 )
 include(${CMAKE_CURRENT_BINARY_DIR}/cmake/CPM.cmake)
 
 set(CPM_SOURCE_CACHE "${CMAKE_SOURCE_DIR}/cpm_source_cache")
 
-CPMAddPackage("gh:CLIUtils/CLI11@2.5.0")
+CPMAddPackage("gh:CLIUtils/CLI11@2.6.1")
 
 ####################################################################################################
 # clang
